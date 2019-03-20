@@ -1,0 +1,40 @@
+{
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.1",
+    "bootstrap-sass": "^3.3.7",
+    "howler": "^2.0.15",
+    "jquery": "^3.1.0",
+    "laravel-echo-sc": "^1.0.0",
+    "lodash": "^4.16.2",
+    "popper.js": "^1.14.3",
+    "sc-stateless-presence": "^1.0.6",
+    "socketcluster-client": "^11.0.2",
+    "vue": "^2.5.16",
+    "vue-class-component": "^6.2.0",
+    "vue-property-decorator": "^6.0.0",
+    "vue-resource": "^1.5.0",
+    "vue-router": "^3.0.1",
+    "vue-sweetalert2": "^1.6.3",
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "laravel-mix": "^2.1.11",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.8.3"
+  }
+}

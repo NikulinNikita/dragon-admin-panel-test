@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family-SFUIDisplay, $font-family-sans-serif;
+  color: #fff;
+  background: $primary-dark;
+
+  &.bg-primary {
+    background-color: $primary-dark !important;
+  }
+}
+
+#vueApp {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#main {
+  position: relative;
+  flex: 1;
+  padding: 0 6vw;
+}
+
+.opacity-100 {
+  opacity: 1 !important;
+}

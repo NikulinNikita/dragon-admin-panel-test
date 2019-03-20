@@ -1,0 +1,175 @@
+{
+  "name": "dragonstudio/admin_panel",
+  "description": "Admin Panel",
+  "type": "laravel-package",
+  "license": "MIT",
+  "require": {
+    "php": "^7.2",
+    "barryvdh/laravel-debugbar": "^3.1",
+    "barryvdh/laravel-ide-helper": "^2.4",
+    "caouecs/laravel-lang": "~3.0",
+    "dragonstudio/amqp-broadcaster": "develop-dev",
+    "dragonstudio/bonus-program": "develop-dev",
+    "dragonstudio/db-models": "develop-dev",
+    "dragonstudio/baccarat-rules": "develop-dev",
+    "felixkiss/uniquewith-validator": "^3.1",
+    "fideloper/proxy": "^4.0",
+    "laravel/framework": "5.6.*",
+    "laravel/tinker": "^1.0",
+    "laravelrus/sleepingowl": "5.6.3",
+    "maatwebsite/excel": "^3.0"
+  },
+  "require-dev": {
+    "filp/whoops": "^2.0",
+    "fzaninotto/faker": "^1.4",
+    "mockery/mockery": "^1.0",
+    "nunomaduro/collision": "^2.0",
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "classmap": [
+      "database/seeds",
+      "database/factories"
+    ],
+    "exclude-from-classmap": [
+      "/vendor/dragonstudio/db-models/"
+    ],
+    "psr-4": {
+      "App\\": "app/",
+      "Admin\\": "admin/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": [
+      ]
+    }
+  },
+  "config": {
+    "process-timeout": 0,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@gitlab.com:dragonstudio/db-models.git"
+    },
+    {
+      "type": "vcs",
+      "url":  "git@gitlab.com:dragonstudio/amqp-broadcaster.git"
+    },
+    {
+      "type": "vcs",
+      "url":  "git@gitlab.com:dragonstudio/bonus-program.git"
+    },
+    {
+      "type": "vcs",
+      "url":  "git@gitlab.com:dragonstudio/baccarat-rules.git"
+    }
+  ],
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php artisan key:generate"
+    ],
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover",
+      "php artisan ide-helper:generate"
+    ],
+    "post-update-cmd": [
+      "php artisan sleepingowl:update"
+    ],
+    "+u": [
+      "@composer update"
+    ],
+    "+yu": [
+      "yarn upgrade"
+    ],
+    "+yd": [
+      "yarn dev"
+    ],
+    "+yp": [
+      "yarn production"
+    ],
+    "+da": [
+      "@composer dump-autoload"
+    ],
+    "+ad": [
+      "php artisan allTables:drop"
+    ],
+    "+dt": [
+      "php artisan allTables:drop"
+    ],
+    "+mr": [
+      "php artisan migrate:refresh --force"
+    ],
+    "+pc_p": [
+      "php artisan passport:client --personal --name=\"Personal Access Token\""
+    ],
+    "+ds": [
+      "php artisan db:seed --force",
+      "@+pc_p"
+    ],
+    "+pk": [
+      "php artisan passport:keys"
+    ],
+    "+da+ds": [
+      "@+da",
+      "@+ds"
+    ],
+    "+da+mr": [
+      "@+da",
+      "@+mr"
+    ],
+    "+mr+ds": [
+      "@+mr",
+      "@+ds"
+    ],
+    "+da+mr+ds": [
+      "@+da",
+      "@+mr",
+      "@+ds"
+    ],
+    "+ad+da+mr+ds": [
+      "@+ad",
+      "@+da+mr+ds"
+    ],
+    "+np": [
+      "@+u",
+      "@+ad+da+mr+ds",
+      "@+pk",
+      "@+yu",
+      "@+yd"
+    ],
+    "+u-db": [
+      "composer update dragonstudio/db-models"
+    ],
+    "+vp": [
+      "php artisan vendor:publish --provider=\"DragonStudio\\DbModels\\Providers\\DbModelsServiceProvider\" --force"
+    ],
+    "+u-db+vp": [
+      "@+u-db",
+      "@+vp"
+    ],
+    "+deploy": [
+      "@+u",
+      "@+vp",
+      "@+ad+da+mr+ds",
+      "@+pk",
+      "@+yu",
+      "@+yp"
+    ]
+  }
+}

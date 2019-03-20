@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "es7"
+    ],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "noImplicitUseStrict": false,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./resources/assets/js/**/*"
+  ],
+  "compileOnSave": false
+}

@@ -1,0 +1,224 @@
+.dataTables_paginate .pagination {
+  display: inline-block;
+}
+
+.breadcrumb>li:nth-child(2){
+  display: none !important;
+}
+
+ul.nav.navbar-nav.navbar-right li.logout {
+  margin-right: 15px !important;
+}
+.label-pink {
+  background: hotpink;
+}
+.panel-heading{
+  height: 55px;
+}
+.panel-body span.select2.select2-container.select2-container--default{
+  width: -webkit-fill-available !important;
+}
+.display-filters tr td {
+  vertical-align: middle !important;
+}
+.btn-group {
+  display: inline-flex !important;
+}
+
+#filters-exec, #filters-cancel {
+  padding: 1px 5px !important;
+  margin-right: 5px !important;
+}
+
+.dataTables_processing {
+  z-index: 100;
+}
+
+.admin-eye-open {
+  padding: 1px 5px;
+  margin-top: -1px;
+}
+
+.dataTables_filter label {
+  margin: 5px 10px 0 0;
+}
+
+.display-filters .select2-container {
+  width: 100% !important;
+}
+
+.column-filter, .column-filter input {
+  width: 100% !important;
+}
+
+ul[role="tablist"] a {
+  font-size: 12px;
+}
+
+.custom-list-items ul {
+  margin: 10px 0 0 0;
+}
+
+.custom-list-items ul:first-child {
+  margin: 0;
+}
+
+.custom-list-items li {
+  display: inherit;
+}
+
+.form-element-dependentselect .select2 {
+  width: 100% !important;
+}
+
+.form-element-dependentselect .select2 b {
+  margin-left: -14px !important;
+}
+
+.b-has_included_table .panel .panel-heading,
+.b-has_included_table .panel .pagination,
+.b-has_included_table .panel .dataTables_info {
+  display: none !important;
+}
+
+.b-remove_included_table_header_and_pagination .panel-heading,
+.b-remove_included_table_header_and_pagination .pagination,
+.b-remove_included_table_header_and_pagination .dataTables_info {
+  display: none !important;
+}
+
+.b-remove_included_table_header .panel-heading {
+  display: none !important;
+}
+
+.b-remove_included_pagination .pagination,
+.b-remove_included_pagination .dataTables_info {
+  display: none !important;
+}
+
+.b-remove_included_tabs ul[role='tablist'] {
+  display: none !important;
+}
+.b-remove_included_tabs .tab-content {
+  padding: 0 !important;
+}
+
+.b-remove_included_edit_button a[title='Редактировать'],
+.b-remove_included_edit_button a[title='Edit']{
+  display: none !important;
+}
+
+.b-reports-table>tbody>tr>th {
+  width: 160px !important;
+}
+
+.b-bg_color_light_green {
+  background-color: #99e59f !important;
+}
+.b-mrb-10 {
+  margin-bottom: 10px;
+}
+
+select[readonly].select2-hidden-accessible + .select2-container {
+  pointer-events: none !important;
+  touch-action: none !important;
+}
+select[readonly].select2-hidden-accessible + .select2-container .select2-selection {
+  background: #eee !important;
+  box-shadow: none !important;
+}
+select[readonly].select2-hidden-accessible + .select2-container .select2-selection__arrow,
+select[readonly].select2-hidden-accessible + .select2-container .select2-selection__clear {
+  display: none !important;
+}
+
+li.logout {
+  background-color: red;
+}
+
+.agents-list {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 10px;
+}
+
+.agent {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 20px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.agent > .agent-title {
+  display: block;
+  height: 35px;
+  margin: 5px 0;
+  padding: 5px 10px 5px 30px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  background: #fafafa;
+}
+
+.agent > .agent-title:hover {
+  color: #2ea8e5;
+  background: #fff;
+  cursor: pointer;
+}
+
+.agent > .expand {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  float: left;
+  width: 25px;
+  height: 20px;
+  margin: 7px 0;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  font-size: 10px;
+  line-height: 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.agent > .expand:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-indent: 0;
+  font-family: FontAwesome;
+}
+
+.agent > .expand.closed::before {
+  content: "\F067";
+}
+
+.agent > .expand.opened::before {
+  content: "\F068";
+}
+
+.table-grey {
+  background-color: #f9f9f9;
+}
+
+.table-agent-info {
+  display: none;
+}
+
+.agent .show-agent-info {
+  color: #2ea8e5;
+  background: #fff;
+}

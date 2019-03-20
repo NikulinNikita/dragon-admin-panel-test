@@ -1,0 +1,40 @@
+<?php
+
+return [
+    'page_title' => 'Запросы на зачисление',
+
+    'user->name'               => 'Игрок',
+    'full_name'                => 'ФИО',
+    'bank->title'              => 'Банк получателя',
+    'userBankAccount->number'  => 'Банковский счёт отправителя',
+    'bankAccount->number'      => 'Банковский счёт получателя',
+    'gateway->title'           => 'Способ оплаты',
+    'currency->code'           => 'Валюта',
+    'reference'                => 'Код операции',
+    'transaction_ref'          => 'Транзакционная ссылка',
+    'AdminTotalAmount'         => 'Общая сумма',
+    'AdminDefaultAmount'       => 'Общая сумма ($)',
+    'status'                   => 'Статус',
+    'created_at'               => 'Дата',
+    'sent_amount'              => 'Отправленная сумма',
+    'received_amount'          => 'Полученная сумма',
+    'total_amount'             => 'Общая сумма',
+    'currency_id'              => 'Валюта',
+    'user_id'                  => 'Игрок',
+    'user_bank_id'             => 'Банк отправителя',
+    'user_bank_account_id'     => 'Банковский счёт отправителя',
+    'gateway_id'               => 'Способ оплаты',
+    'bank_account_id'          => 'Банковский счёт получателя',
+    'AdminBankAccountId'       => 'Банковский счёт получателя',
+    'comment'                  => 'Комментарии',
+    'ApprovedByStaff'          => 'Утвердил',
+    'ApprovedToProceedByStaff' => 'Утвердил для согласования',
+    'ApprovedToSucceedByStaff' => 'Утвердил и зачислил средства',
+    'SentToRecheckByStaff'     => 'Отправил на доработку',
+    'DeclinedByStaff'          => 'Отклонил',
+
+    'tabs' => [
+        'DepositRequest' => 'Запрос на зачисление',
+        'StatusChanges'  => 'История изменений',
+    ],
+];

@@ -1,0 +1,145 @@
+.navbar {
+  margin: 0 !important;
+  min-height: 56px;
+
+  &-light,
+  &-dark {
+    color: #fff;
+    background-color: $navbar-bg !important;
+  }
+
+  &-brand {
+    color: #fff !important;
+  }
+
+  .nav {
+
+    &-item {
+
+      & > .nav-link {
+        color: #fff;
+
+        &:hover,
+        &:focus {
+          color: $primary;
+        }
+
+      }
+
+      &.active > .nav-link {
+
+        &,
+        &:hover,
+        &:focus {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  &__theme-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2.34375vw;
+
+    > span {
+      margin-right: 0.8333333333333334vw;
+      font-size: 1rem;
+      color: $primary;
+    }
+
+    > ul {
+      display: inline-block;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      > li {
+
+        > a {
+          display: block;
+          width: 14px;
+          height: 14px;
+          border: 2px solid;
+          border-radius: 7px;
+          text-decoration: none;
+          background-color: transparent;
+
+          &.primary {
+            border-color: $primary;
+
+            &:hover,
+            &.active {
+              background-color: $primary;
+            }
+          }
+
+          &.light {
+            border-color: #fff;
+
+            &:hover,
+            &.active {
+              background-color: #fff;
+            }
+          }
+
+          &.dark {
+            border-color: #000;
+
+            &:hover,
+            &.active {
+              background-color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__lang {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: .8vw;
+      width: 1.5vw;
+      height: auto;
+    }
+
+    .dropdown-toggle {
+      text-decoration: none;
+    }
+
+    .dropdown-menu {
+      top: 56px;
+      left: auto !important;
+      right: 0 !important;
+
+      &::after {
+        left: 50% !important;
+        right: auto !important;
+        margin-left: -4px;
+      }
+
+      .dropdown-item {
+        text-decoration: none;
+
+        span {
+          text-decoration: underline;
+        }
+
+        &.active,
+        &:hover,
+        &:focus {
+          text-decoration: none;
+
+          span {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

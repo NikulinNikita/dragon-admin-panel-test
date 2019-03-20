@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'Dashboard'                   => 'Dashboard',
+    'Staff'                       => 'Staff',
+    'Users'                       => 'Users',
+    'Finances'                    => 'Finances',
+    'Banks'                       => 'Banks',
+    'Games'                       => 'Games',
+    'Agents'                      => 'Agents',
+    'PartnershipSettings'         => 'Partnership Settings',
+    'Bonuses'                     => 'Bonuses',
+    'Statuses'                    => 'Statuses',
+    'Baccarat'                    => 'Baccarat',
+    'Roulette'                    => 'Roulette',
+    'Risks'                       => 'Risks',
+    'Reports'                     => 'Reports',
+    'ReportsTransactions'         => 'Transactions',
+    'ReportsTransactionsAnalysis' => 'Transactions Analysis',
+    'ReportsActivityAnalysis'     => 'Activity Analysis',
+    'ReportsGamesStatistics'      => 'Games Statistics',
+    'ReportsClosingStatement'     => 'Closing Statement',
+    'ReportsBonuses'              => 'Bonus Statistics',
+    'ReportsOperatorShifts'       => 'Operator Shifts',
+    'ReportsAgents'               => 'Partner Program',
+];

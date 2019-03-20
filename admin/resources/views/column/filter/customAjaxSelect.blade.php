@@ -1,0 +1,1 @@
+{!! Form::select('', BaseModel::stripArrayTags($options), null, $attributesArray) !!}

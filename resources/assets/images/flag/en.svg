@@ -1,0 +1,32 @@
+<svg id="d710086b-9603-41d6-9ff3-3fb1b2fcaebe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 257 150">
+  <defs>
+    <style>
+      .b21ff642-de34-424a-be46-d8f2466cb74b {
+        fill: #00247d;
+      }
+
+      .\39 94fbecd-3a17-46ea-8c0a-e27b7a85f28d {
+        fill: #fff;
+      }
+
+      .\39 f8db7a4-3882-47fe-9b08-0855c6ab4d8e {
+        fill: #cf142b;
+      }
+    </style>
+  </defs>
+  <g>
+    <path id="b6787722-49ca-4d49-bb1b-e74d88dc0b56" data-name="path3408" class="b21ff642-de34-424a-be46-d8f2466cb74b" d="M471.5,225V375h257V225h-257Z" transform="translate(-471.5 -225)"/>
+    <g id="452cba19-8bb9-4bf5-898f-1f1b9903da7a" data-name="g3504">
+      <path id="155f0f42-0645-42e4-b413-28db0c6d109c" data-name="path3410" class="994fbecd-3a17-46ea-8c0a-e27b7a85f28d" d="M471.53,225l0,17,99.72,58.16-99.69,58.11,0,16.66,28.72,0,99.72-58.09L699.84,375l28.66,0V358.43l-99.83-58.27L728.49,242V225H699.95l-100,58.44L499.75,225Z" transform="translate(-471.5 -225)"/>
+      <g id="efe8ba56-64d7-4149-9a30-73359b2d7416" data-name="g3475">
+        <path id="cb8a887a-cf05-4607-b6cc-4d528a7ad07c" data-name="path3473" class="9f8db7a4-3882-47fe-9b08-0855c6ab4d8e" d="M599.89,300.19l19.15-.08,109.46,64-0.18,10.77L599.89,300.19h0ZM709.1,225l18.56,0L599.88,300.22V289L709.1,225h0ZM526,267.86L471.5,235.93V225l128.4,75.16-18.92,0L526,267.86h0Zm73.83,32.3v10.93L490.66,375h-19.1l128.32-74.84h0Z" transform="translate(-471.5 -225)"/>
+      </g>
+    </g>
+    <g id="daa8d77c-e831-43fc-a98c-9f176cc83ead" data-name="g3457">
+      <g id="8fb669d9-0783-498c-b6c3-88ccb57f93c7" data-name="g3500">
+        <path id="ba642f1b-a429-4bd4-a8ef-2013a2b84ef2" data-name="path3414" class="994fbecd-3a17-46ea-8c0a-e27b7a85f28d" d="M578.58,225v50H471.5v50H578.58v50h42.83V325H728.5V275H621.42V225H578.58Z" transform="translate(-471.5 -225)"/>
+        <path id="db4fd82b-a690-456a-b54f-e226a7940428" data-name="path3416" class="9f8db7a4-3882-47fe-9b08-0855c6ab4d8e" d="M587.15,225v60H471.5v30H587.15v60h25.7V315H728.5V285H612.85V225h-25.7Z" transform="translate(-471.5 -225)"/>
+      </g>
+    </g>
+  </g>
+</svg>

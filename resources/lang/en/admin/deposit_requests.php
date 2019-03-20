@@ -1,0 +1,40 @@
+<?php
+
+return [
+    'page_title' => 'Deposit Requests',
+
+    'user->name'               => 'User',
+    'full_name'                => 'Full Name',
+    'bank->title'              => 'Bank',
+    'userBankAccount->number'  => 'Sender Bank Account',
+    'bankAccount->number'      => 'Receiver Bank Account',
+    'gateway->title'           => 'Gateway',
+    'currency->code'           => 'Currency',
+    'reference'                => 'Reference',
+    'transaction_ref'          => 'Transaction Reference',
+    'AdminTotalAmount'         => 'Total Amount',
+    'AdminDefaultAmount'       => 'Default Amount',
+    'status'                   => 'Status',
+    'created_at'               => 'Date',
+    'sent_amount'              => 'Sent Amount',
+    'received_amount'          => 'Received Amount',
+    'total_amount'             => 'Total Amount',
+    'currency_id'              => 'Currency',
+    'user_id'                  => 'User',
+    'user_bank_id'             => 'Sender Bank',
+    'user_bank_account_id'     => 'Sender Bank Account',
+    'gateway_id'               => 'Gateway',
+    'bank_account_id'          => 'Receiver Bank Account',
+    'AdminBankAccountId'       => 'Receiver Bank Account',
+    'comment'                  => 'Comment',
+    'ApprovedByStaff'          => 'Approved by Staff',
+    'ApprovedToProceedByStaff' => 'Approved To Proceed by Staff',
+    'ApprovedToSucceedByStaff' => 'Approved To Succeed by Staff',
+    'SentToRecheckByStaff'     => 'Sent To Recheck by Staff',
+    'DeclinedByStaff'          => 'Declined by Staff',
+
+    'tabs' => [
+        'DepositRequest' => 'Deposit Request',
+        'StatusChanges'  => 'Status Changes',
+    ],
+];

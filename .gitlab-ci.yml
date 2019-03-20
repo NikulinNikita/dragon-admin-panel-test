@@ -1,0 +1,44 @@
+staging:
+  stage: deploy
+  environment:
+    name: staging
+    url: https://acp.goldendragon.site/
+  script:
+    - cd /var/www/acp.goldendragon.site
+    - php artisan down
+    - git checkout -- .
+    - rm -rf database/migrations/* && rm -rf database/seeds/*
+    - git pull && composer update && composer dump-autoload
+    - yarn
+    - yarn production
+    - php artisan up
+  only:
+    - develop
+  tags:
+    - gd
+    - project
+  allow_failure: false
+  when: manual
+
+production:
+  stage: deploy
+  environment:
+    name: production
+    url: https://gdacp.site/
+  script:
+    - cd /var/www/gdacp.site
+    - php artisan down
+    - git checkout -- .
+    - rm -rf database/migrations/* && rm -rf database/seeds/*
+    - git pull && composer update && composer dump-autoload
+    - yarn
+    - yarn production
+    - php artisan up
+  only:
+    - master
+  tags:
+    - gd
+    - top
+    - production
+  allow_failure: false
+  when: manual
